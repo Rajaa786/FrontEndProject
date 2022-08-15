@@ -1,0 +1,73 @@
+.navContainer {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(233, 254, 193); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.navContainer .nav {
+  /* background-color: yellowgreen; */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 1rem; */
+  cursor: pointer;
+}
+
+.navElements {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 60%);
+}
+
+.premiumSubscription {
+  width: 100%;
+  background-color: #e9e3fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0rem;
+}
+
+.premiumSubscription #image {
+  margin-top: -8rem;
+  width: 15rem;
+}
+
+.premiumSubscription .premiumInfo {
+  width: 65%;
+  text-align: center;
+}
+
+.premiumSubscription .premiumInfo > h6 {
+  line-height: 1.5rem;
+}
+
+.premiumSubscription .premiumInfo > p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.premiumSubscription .viewMoreDetails {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: #8a70d6;
+  color: white;
+}

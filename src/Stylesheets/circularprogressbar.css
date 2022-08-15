@@ -1,0 +1,32 @@
+.outerCircle {
+  --progressPercent: 0deg;
+  --progressColor: #8a70d6;
+  --nonProgressColor: #fcfbfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: conic-gradient(
+    var(--progressColor) var(--progressPercent),
+    var(--nonProgressColor) 0deg
+  );
+  box-shadow: 0 0 0.5rem 0.05rem rgb(0 0 0 / 32%);
+  border-radius: 50%;
+}
+
+.innerCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: inset 0 0 0.1rem 0.01rem rgb(0 0 0 / 15%);
+}
+
+/* 8a70d6 */
+/* #fcfbfc */

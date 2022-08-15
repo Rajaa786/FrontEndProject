@@ -1,0 +1,135 @@
+.profileContainer {
+  /* background-color: bisque; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.profileHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileContainer .profileImage {
+  --measure: 4rem;
+  width: var(--measure);
+  height: var(--measure);
+  border-radius: 50%;
+  background-image: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-position: center 19%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profileContainer .editIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.profileContainer .calendar {
+  border: none !important;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.react-calendar button {
+  border-radius: 0.7rem;
+}
+
+.profileContainer .calendarSection {
+  background-color: white;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.homeworkProgress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+  width: 100%;
+}
+
+.homeworkProgress > h5 {
+  margin-bottom: 0.5rem;
+}
+
+.homeworkProgress .allCoursesProgress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.homeworkProgress .progressMeters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.homeworkProgress .progressMeters {
+  /* background-color: rgb(215, 215, 56); */
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  /* box-shadow: 0 0 0.2rem 0.2rem rgb(0 0 0/0.5); */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+}
+
+.homeworkProgress .progressMeters:hover {
+  color: white;
+  background-color: #8a70d6;
+}
+
+.homeworkProgress .progressMeters:hover #number {
+  color: black;
+}
+
+.homeworkProgress .progressMeters:hover .outerCircle {
+  --progressColor: white;
+  --nonProgressColor: hsl(253, 93%, 78%);
+}
+
+.homeworkProgress .homeworkInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.homeworkProgress .homeworkInfo .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}

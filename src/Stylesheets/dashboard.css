@@ -1,0 +1,158 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  height: 100%;
+  overflow-y: scroll;
+  /*For IE and Edge */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.dashboardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboardContainer .dashboardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboardContainer .search_notify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dashboardContainer .searchBar {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.dashboardContainer input#search::placeholder {
+  color: hsl(0, 0%, 60%);
+}
+
+.dashboardContainer input#search {
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.dashboardContainer .notification {
+  display: flex;
+  background-color: white;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.dashboardContainer .fa-regular {
+  font-size: 1.2rem;
+}
+
+.coursesContainer {
+  width: 100%;
+}
+
+.coursesContainer .courses {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
+
+.coursesContainer .courses > * {
+  flex-grow: 1;
+  flex-basis: 33%;
+}
+
+.myCoursesContainer .courseDetailsHeader {
+  display: flex;
+}
+
+.myCoursesContainer.courseDetailsHeader > * {
+  flex-grow: 1;
+}
+
+.width1 {
+  flex-basis: 50%;
+}
+
+.width2 {
+  flex-basis: var(--headerTitlesWidth);
+}
+
+.course {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.course .courseThumbnail {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  background-color: tan;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.myCoursesContainer .myTotalCourses .course1 {
+  background-color: #e9e3fe;
+  color: hsl(253, 72%, 69%);
+}
+.myCoursesContainer .myTotalCourses .course2 {
+  background-color: #e5f3fe;
+  color: hsl(206, 83%, 55%);
+}
+
+.myCoursesContainer .myTotalCourses .course3 {
+  background-color: #ffe4fd;
+  color: hsl(304, 50%, 55%);
+}
+
+.myCoursesContainer .myTotalCourses .course4 {
+  background-color: #e9e3fe;
+  color: hsl(253, 72%, 69%);
+}
+
+.myCoursesContainer .myTotalCourses .course5 {
+  background-color: #fff0e1;
+  color: hsl(30, 60%, 58%);
+}
+
+.course .courseInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.myTotalCourses {
+  --headerTitlesWidth: calc(50% / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.myTotalCourses .myCourses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
