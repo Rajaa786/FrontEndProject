@@ -124,12 +124,17 @@ abbr[title] {
 .homeworkProgress .homeworkInfo {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
+  font-size: 0.8rem;
 }
 .homeworkProgress .homeworkInfo .details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.homeworkProgress .homeworkInfo .details > span:nth-child(1) {
+  font-weight: 600;
 }
